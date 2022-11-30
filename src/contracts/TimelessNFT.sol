@@ -53,8 +53,8 @@ contract TimelessNFT is ERC721Enumerable, Ownable {
         string memory metadataURI,
         uint256 salesPrice
     ) external payable {
-        require(msg.value >= cost, "Ether too low for minting!");
-        require(existingURIs[metadataURI] == 0, "This NFT is already minted!");
+        require(msg.value >= cost, "Ether too low for adding!");
+        require(existingURIs[metadataURI] == 0, "This Item is already added!");
         require(msg.sender != owner(), "Sales not allowed!");
         
 

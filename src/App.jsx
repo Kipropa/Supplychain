@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { getAllNFTs, isWallectConnected } from "./Blockchain.Services";
 import Alert from "./component/Alert";
-import Artworks from "./component/Artworks";
+import Items from "./component/Items";
 import CreateNFT from "./component/CreateNFT";
 import Footer from "./component/Footer";
 import Header from "./component/Header";
@@ -64,13 +64,9 @@ const App = () => {
                 <Route path="/calendar" element={<Calendar />} />
                 <Route path="/geography" element={<Geography />} />
                 <Route path="/hero" element={<Hero />} />
-                <Route path="/addeditems" element={<Artworks />} />
+                <Route path="/addeditems" element={<Items />} />
                 <Route path="/certifications" element={<Transactions />} />
-                {/* <Route path="/createitem" element={<CreateNFT />} /> */}
               </Routes>
-              {/* <Hero /> */}
-              {/* <Artworks /> */}
-              {/* <Transactions /> */}
               <CreateNFT />
               <ShowNFT />
               <UpdateNFT />

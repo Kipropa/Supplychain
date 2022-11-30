@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import { useEffect, useState } from 'react'
 import { BiTransfer } from 'react-icons/bi'
 import { MdOpenInNew } from 'react-icons/md'

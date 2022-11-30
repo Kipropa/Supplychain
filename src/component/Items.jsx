@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { setGlobalState, useGlobalState } from '../store'
 
-const Artworks = () => {
+const Items = () => {
   const [nfts] = useGlobalState('nfts')
   const [end, setEnd] = useState(4)
   const [count] = useState(4)
@@ -78,4 +78,4 @@ const Card = ({ nft }) => {
   )
 }
 
-export default Artworks
+export default Items
